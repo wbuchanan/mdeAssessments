@@ -1,7 +1,6 @@
 #' @title MDE Language Codes
 #' @description Function to builds a data.frame to use for looking up MDE
 #' Assessment language codes
-#' @export
 #' @import magrittr
 #' @importFrom dplyr as_data_frame bind_cols
 #' @return A tbl_df object containing the key value pairs of numeric language
@@ -95,6 +94,6 @@ mdeLanguages <- function() {
 	names(mdeLanguage) <- c("key", "value")
 
 	# Returns the data frame object
-	return(mapData)
+	return(Map$new(mapData))
 
 } # End of function that builds up look up data for MDE defined language codes

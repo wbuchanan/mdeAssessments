@@ -1,6 +1,5 @@
 #' @title MDE Foreign Exchange Student Indicator
 #' @description Function to build a Map object for Foreign Exchange Student status
-#' @export
 #' @import magrittr
 #' @importFrom dplyr as_data_frame bind_cols
 #' @return A tbl_df object containing the key value pairs of numeric keys
@@ -25,6 +24,6 @@ mdeForeignExchange <- function() {
 	names(mapData) <- c("key", "value")
 
 	# Returns the data frame object
-	return(mapData)
+	return(Map$new(mapData))
 
 } # End of function to construct Map of codes

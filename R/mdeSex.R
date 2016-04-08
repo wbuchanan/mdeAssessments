@@ -1,7 +1,6 @@
 #' @title MDE Student Sex Encoding
 #' @description Function to build a data.frame to use for looking up MDE
 #' Assessment student sex
-#' @export
 #' @import magrittr
 #' @importFrom dplyr as_data_frame bind_cols
 #' @return A tbl_df object containing the key value pairs of numeric keys
@@ -26,6 +25,6 @@ mdeSex <- function() {
 	names(mdeStudentSex) <- c("key", "value")
 
 	# Returns the data frame object
-	return(mapData)
+	return(Map$new(mapData))
 
 } # End of function to construct Map of codes

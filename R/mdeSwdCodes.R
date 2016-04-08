@@ -1,7 +1,6 @@
 #' @title MDE Disability Codes
 #' @description Function to build a data.frame to use for looking up MDE
 #' Assessment disability codes
-#' @export
 #' @import magrittr
 #' @importFrom dplyr as_data_frame bind_cols
 #' @return A tbl_df object containing the key value pairs of numeric disability
@@ -41,7 +40,7 @@ mdeSwdCodes <- function() {
 	names(swdcodes) <- c("key", "value")
 
 	# Returns the data frame object
-	return(mapData)
+	return(Map$new(mapData))
 
 } # End of function that builds up look up data for MDE defined disability codes
 
